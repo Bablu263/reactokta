@@ -13,7 +13,7 @@ const oktaAuth = new OktaAuth({
   issuer: 'https://dev-40952775.okta.com/oauth2/default',
   clientId: '0oan9py6yx7nt0Wiz5d7',
   // clientSecret : 'AK1_-ctB-vPgs5gxGd6vgYimy0K5QVtoaOzoG8nQIctPA5Yl6Apu9LOWqlC9efYR',
-  redirectUri: 'https://reactokta.vercel.app/callback',
+  redirectUri: window.location.origin + '/callback',
 });
 
 function App() {
