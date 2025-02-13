@@ -31,7 +31,7 @@ function App() {
             <Security oktaAuth={oktaAuth} restoreOriginalUri={restoreOriginalUri}>
               <Header />
               <Routes>
-                <Route path="/" element={<SecureRoute element={<Home />} />}  />
+                <Route path="/" element={<Home />} />
                 <Route path='/login'  element={<Login/>}/>
                 <Route path="/private" element={<SecureRoute element={<Private />} />} />
                 <Route path="/callback" element={<LoginCallback />} />
